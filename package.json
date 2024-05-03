@@ -1,18 +1,26 @@
 {
-  "name": "crossfit-wod-api",
+  "name": "portweb",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-      "dev": "nodemon src/index.js"
+  "type": "module",
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-handlebars": "^6.0.7"
   },
-  "keywords": [],
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gilim69/portweb.git"
+  },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-      "nodemon": "^3.1.0"
+  "bugs": {
+    "url": "https://github.com/gilim69/portweb/issues"
   },
-  "dependencies": {
-      "express": "^4.19.2"
-  }
+  "homepage": "https://github.com/gilim69/portweb#readme"
 }
