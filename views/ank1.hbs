@@ -1,0 +1,89 @@
+<form action="/ank_new" method="POST">
+<h4 style="text-align:center">Анкета для оценки качества условий оказания услуг в ГБУЗ РКЦ в амбулаторных условиях</h4>
+	<ol>
+		<li>Ф.И.О. <input type="text" name="fio" value="{{body.fio}}" style="width:100%"></li>
+		<li>Место проживания (укажите город, район РБ): 
+			<input type="text" name="locate" value="{{body.locate}}"  style="width:100%"></li>
+		<li>Дата обращения в поликлинику: <input type="date" name="date" value="{{body.date}}"></li>
+		<li onclick="setOther()">Вы записались на прием к врачу:<br>
+			<input type="radio" name="radio1" value="1" id="radio11" checked> по телефону<br>
+			<input type="radio" name="radio1" value="2" id="radio12"> через своего лечащего врача<br>
+			<input type="radio" name="radio1" value="3" id="radio13"> при личном обращении в регистратуру<br>
+			<input type="radio" name="radio1" value="4" id="radio14" onclick="setOther(1)"> другое: 
+					<input type="text" name="other1" value="{{body.other1}}" id="other1" style="width:100%">
+		</li>
+		<li onclick="setOther()">Срок ожидания приема врача, к которому Вы записались, с момента записи:<br> 
+			<input type="radio" name="radio2" value="1" id="radio21" checked> более 14 календарных дней<br>
+			<input type="radio" name="radio2" value="2" id="radio22"> 7-14 календарных дней<br>
+			<input type="radio" name="radio2" value="3" id="radio23"> 4-6 календарных дней<br>
+			<input type="radio" name="radio2" value="4" id="radio24"> 1-3 календарных дня <br>
+			<input type="radio" name="radio2" value="5" id="radio25" onclick="setOther(2)"> другое:
+					<input type="text" name="other2" value="{{body.other2}}" id="other2" style="width:100%">
+		</li>
+		</ol>	
+	<div class="text-center">
+		<input type="submit" class="btn btn-outline-success flex-center">
+	</div>
+</form>
+
+<script>
+	window.addEventListener("load", ()=>{
+		if ({{body.radio1}}) { document.getElementById("radio1{{body.radio1}}").checked = true};
+
+		if ({{body.radio2}}) { document.getElementById("radio2{{body.radio2}}").checked = true};
+
+		if (document.getElementById("radio14").checked)
+			document.getElementById("other1").style.display = 'block'
+		else
+			document.getElementById("other1").style.display = 'none'
+
+		if (document.getElementById("radio25").checked)
+			document.getElementById("other2").style.display = 'block'
+		else
+			document.getElementById("other2").style.display = 'none'
+	});
+	
+	const setOther=()=>{
+		let el = event.target;
+		if (el.id.slice(0,5)!="radio") return;
+
+		if (document.getElementById("radio14").checked)
+			document.getElementById("other1").style.display = 'block'
+		else
+			document.getElementById("other1").style.display = 'none';
+
+		if (document.getElementById("radio25").checked)
+			document.getElementById("other2").style.display = 'block'
+		else
+			document.getElementById("other2").style.display = 'none';
+	}
+</script>
+
+<style>
+	#other1, #other2 {
+		display: none;
+	}
+	form {
+		width: 100%;
+		max-width: 480px;
+		margin-left: auto;
+		margin-right: auto;
+		font-family:Arial, Helvetica, sans-serif;
+		border: 1px solid;
+		border-radius: 12px;
+		box-shadow: 4px 4px 4px;
+		padding: 12px;
+	}
+	ol {
+		width: 94%;
+		margin-left: -12px;
+	}
+	ol li {
+		padding-top: 12px;
+	}
+
+	#submitbutton, h4 {
+		margin-left: auto;
+		margin-right: auto;		
+	}
+</style>
