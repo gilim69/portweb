@@ -1,6 +1,27 @@
-<h4>Спасибо за Ваше мнение!</h4>
-{{aaa}}
-{{#each aaa}}
-    <li>{{ . }}
-    </li>
-{{/each}}
+<div class="new-ank">
+    <img src="/logo.png">
+    <hr>
+    <h4>Уважаемый <i>{{fio}}</i>!</h4>
+    <br>
+    <h6>Благодарим Вас за предоставленную информацию. <br>Надеемся, она поможет нам улучшить качество наших услуг.</h6>
+    <br>
+    <hr>
+    <a href="https://bashcardio.ru/">На сайт ГБУЗ РКЦ</a>
+</div>
+
+<style>
+    .new-ank {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-width: 480px;
+        border-radius: 12px;
+        border: 1px solid;
+        box-shadow: 4px 4px 4px;
+        padding: 18px;
+    }
+
+    img {
+        width: 100%;
+    }
+</style>
