@@ -40,6 +40,7 @@ app.get('/get_ank', (req, res) => {
 	ank = [];
 });
 app.get('/gett', (req, res) => {
+        console.log('gett');
 	res.send(ank);
 });
 
