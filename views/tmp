@@ -1,0 +1,64 @@
+			<!---input class="btn-check" type="radio" name="radio1" value="1" id="radio11" checked> 
+				<label class="btn btn-outline-success btn-sm lab" for="radio11">Кардиологическое отделение №1 (КО-1)</label><br>
+			<input class="btn-check" type="radio" name="radio1" value="2" id="radio12"> 
+				<label class="btn btn-outline-success btn-sm lab" for="radio12">Кардиологическое отделение №2 (КО-2)</label><br>
+			<input class="btn-check" type="radio" name="radio1" value="3" id="radio13"> 
+				<label class="btn btn-outline-success btn-sm lab" for="radio13">Кардиологическое отделение №3 (КО-3)</label><br>
+			<input class="btn-check" type="radio" name="radio1" value="4" id="radio14"> 
+				<label class="btn btn-outline-success btn-sm lab" for="radio14">Кардиохирургическое отделение №1 (КХО-1)</label><br>
+			<input class="btn-check" type="radio" name="radio1" value="4" id="radio15"> 
+				<label class="btn btn-outline-success btn-sm lab" for="radio15">Кардиохирургическое отделение №2 (КХО-2)</label><br>
+			<input class="btn-check" type="radio" name="radio1" value="4" id="radio16"> 
+				<label class="btn btn-outline-success btn-sm lab" for="radio16">Кардиохирургическое отделение №3 (КХО-3)</label><br>
+
+			<input class="btn-check" type="radio" name="radio1" value="1" id="radio11"> 
+				<label class="btn btn-outline-success btn-sm lab" for="radio11">Отделение рентгенохирургических методов 
+					диагностики и лечения №1 (ОРМДиЛ-1)</label><br>
+			<input class="btn-check" type="radio" name="radio1" value="1" id="radio11"> 
+				<label class="btn btn-outline-success btn-sm lab" for="radio11">Отделение рентгенохирургических методов 
+					диагностики и лечения №2 (ОРМДиЛ-2)</label><br>
+			<input class="btn-check" type="radio" name="radio1" value="1" id="radio11"> 
+				<label class="btn btn-outline-success btn-sm lab" for="radio11">Отделение сосудистой хирургии (ОСР)</label><br>
+			<input class="btn-check" type="radio" name="radio1" value="1" id="radio11"> 
+				<label class="btn btn-outline-success btn-sm lab" for="radio11">Отделение медицинской реабилитации 
+					взрослых для пациентов с соматическими заболеваниями (ОМР)</label><br>
+			<input class="btn-check" type="radio" name="radio1" value="1" id="radio11"> 
+				<label class="btn btn-outline-success btn-sm lab" for="radio11">Отделение хирургического лечения сложных 
+					нарушений ритма сердца и электрокардиостимуляции (ОХЛСНРСиЭК)</label><br>
+			<input class="btn-check" type="radio" name="radio1" value="1" id="radio11"> 
+				<label class="btn btn-outline-success btn-sm lab" for="radio11">Отделение сосудистой хирургии (ОСР)</label><br>
+
+
+			<input class="btn-check" type="radio" name="radio1" value="2" id="radio12">
+				<label class="btn btn-outline-success btn-sm lab" for="radio12">через своего лечащего врача</label><br>
+			<input class="btn-check" type="radio" name="radio1" value="3" id="radio13">
+				<label class="btn btn-outline-success btn-sm lab" for="radio13">при личном обращении в регистратуру</label><br>
+			<input class="btn-check" type="radio" name="radio1" value="4" id="radio14">
+				<label class="btn btn-outline-success btn-sm lab" for="radio14">другое:</label>
+					<input class="inp" type="text" name="other1" id="other1" style="width:100%"--->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+								<input class="btn-check" type="radio" name="radio2" value="1" id="radio21" checked>
+				<label class="btn btn-outline-success btn-sm lab" for="radio21">более 14 календарных дней</label><br>
+			<input class="btn-check" type="radio" name="radio2" value="2" id="radio22">
+				<label class="btn btn-outline-success btn-sm lab" for="radio22">7-14 календарных дней</label><br>
+			<input class="btn-check" type="radio" name="radio2" value="3" id="radio23">
+				<label class="btn btn-outline-success btn-sm lab" for="radio23">4-6 календарных дней</label><br>
+			<input class="btn-check" type="radio" name="radio2" value="4" id="radio24">
+				<label class="btn btn-outline-success btn-sm lab" for="radio24">1-3 календарных дня </label><br>
+			<input class="btn-check" type="radio" name="radio2" value="5" id="radio25">
+				<label class="btn btn-outline-success btn-sm lab" for="radio25">другое:</label>
+					<input class="inp" type="text" name="other2" id="other2" style="width:100%">
